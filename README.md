@@ -1,5 +1,3 @@
-# HMM-for-Kunitz
-
 This repository contains all the material for the development of an hidden Markov Model for detecting Kunitz/BPTI domains in protein sequences.
 
 The material is organized as initial datasets, pipeline taking the datasets in input and returning the trained model with its performance metrics used for optimisation.
