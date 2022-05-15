@@ -1,4 +1,4 @@
-HMM for Kunitz/BPTI domains
+# HMM for Kunitz/BPTI domains
 
 This repository contains all the material for the development of an hidden Markov Model for detecting Kunitz/BPTI domains in protein sequences.
 
