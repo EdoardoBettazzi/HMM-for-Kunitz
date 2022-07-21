@@ -31,16 +31,13 @@ def get_confusion(file,th=1e-6):
                     cm[1,1] += 1
     return cm
 
-#we have in the first row the true negatives and the fals negatives;
-#in the second there are false positives and true positives
-
 def get_accuracy(cm):
     return (cm[0,0] + cm[1,1])/np.sum(cm)
 
 def get_mcc(cm):
     '''Matthew correlation coefficient'''
-    n = cm[0,0]*cm[1,1]-cm[0,1]*cm[1,0]   #numerator
-    d = np.sqrt((cm[0,0]+cm[1,1])*(cm[0,0]+cm[0,1])*(cm[1,1]+cm[0,1])*(cm[1,1]+cm[1,0])) #denominator
+    n = cm[0,0]*cm[1,1]-cm[0,1]*cm[1,0]
+    d = np.sqrt((cm[0,0]+cm[1,1])*(cm[0,0]+cm[0,1])*(cm[1,1]+cm[0,1])*(cm[1,1]+cm[1,0]))
     return n/d
 
 if __name__=='__main__':
