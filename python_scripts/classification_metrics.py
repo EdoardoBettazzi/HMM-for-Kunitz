@@ -19,7 +19,7 @@ def get_confusion(file,th=1e-6):
             l = line.strip().split()
             evalue = float(l[1])
             class_ = int(l[2])
-            if evalue> th:       #we could optimize like him, but this is clearer
+            if evalue> th:
                 if class_ == 0:
                     cm[0,0] += 1
                 elif class_ == 1:
